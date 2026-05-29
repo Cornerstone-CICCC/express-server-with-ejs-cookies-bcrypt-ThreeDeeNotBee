@@ -1,0 +1,25 @@
+{
+  "name": "express-server-with-ejs-cookies-bcrypt-threedeenotbee",
+  "version": "1.0.0",
+  "description": "1. **Setup Server with EJS:**\r    - Configure your server to use EJS as the view engine.\r    - Define the directories for static files and EJS templates.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cornerstone-CICCC/express-server-with-ejs-cookies-bcrypt-ThreeDeeNotBee.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Cornerstone-CICCC/express-server-with-ejs-cookies-bcrypt-ThreeDeeNotBee/issues"
+  },
+  "homepage": "https://github.com/Cornerstone-CICCC/express-server-with-ejs-cookies-bcrypt-ThreeDeeNotBee#readme",
+  "dependencies": {
+    "ejs": "^6.0.1",
+    "express": "^5.2.1"
+  }
+}
