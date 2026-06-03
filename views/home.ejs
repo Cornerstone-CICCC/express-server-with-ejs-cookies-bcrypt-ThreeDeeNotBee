@@ -1,14 +1,21 @@
 <%- include('partials/header') %>
 
-<h1>Welcome to our Application</h1>
-<p>
-  This is the home page. Please use the links below or in the navigation to get
-  started.
-</p>
+<% if (user) { %>
+    <h1>Welcome back, <%= user.email %>!</h1>
+    <p>You are securely logged in. The server remembers you via a signed cookie.</p>
+    
+    <div class="auth-links">
+        <a href="/logout" class="btn alert-danger" style="text-decoration:none;">Logout</a>
+    </div>
 
-<div class="auth-links">
-  <a href="/login" class="btn">Login</a>
-  <a href="/register" class="btn secondary">Register</a>
-</div>
+<% } else { %>
+    <h1>Welcome to our Application</h1>
+    <p>You are not logged in. Please use the links below to get started.</p>
+    
+    <div class="auth-links">
+        <a href="/login" class="btn">Login</a>
+        <a href="/register" class="btn secondary">Register</a>
+    </div>
+<% } %>
 
 <%- include('partials/footer') %>
